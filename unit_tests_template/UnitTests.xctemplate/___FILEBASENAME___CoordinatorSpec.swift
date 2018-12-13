@@ -13,24 +13,20 @@ final class ___FILEBASENAMEASIDENTIFIER___: QuickSpec {
         var sut: ___VARIABLE_sceneName___Coordinator!
         var mockedNavigationController: MockedUINavigationController!
 
-        context("given a ___VARIABLE_sceneName___Coordinator") {
+        describe("given a ___VARIABLE_sceneName___Coordinator") {
             beforeEach {
                 mockedNavigationController = MockedUINavigationController()
                 sut = ___VARIABLE_sceneName___Coordinator(presentingViewController: mockedNavigationController)
             }
-        }
 
-        context("when starting coordinator") {
-            beforeEach {
-                sut.start()
-            }
+            context("when starting coordinator") {
+                beforeEach {
+                    sut.start()
+                }
 
-            it("then the pushed view controller should be ___VARIABLE_sceneName___ViewController") {
-                expect(mockedNavigationController.viewControllerToPush).to(beAKindOf(___VARIABLE_sceneName___ViewController.self))
-            }
-
-            it("then the bottom bar should be hidden") {
-                expect(sut.currentViewController?.hidesBottomBarWhenPushed).to(beTrue())
+                it("then the pushed view controller should be ___VARIABLE_sceneName___ViewController") {
+                    expect(mockedNavigationController.viewControllerToPush).to(beAKindOf(___VARIABLE_sceneName___ViewController.self))
+                }
             }
         }
     }
