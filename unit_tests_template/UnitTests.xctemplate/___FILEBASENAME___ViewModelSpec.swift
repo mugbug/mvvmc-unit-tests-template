@@ -6,21 +6,22 @@
 import Quick
 import Nimble
 
-@testable import Dev
+@testable import MeuAlelo
 
 final class ___FILEBASENAMEASIDENTIFIER___: QuickSpec {
     override func spec() {
         var sut: ___VARIABLE_sceneName___ViewModel!
-        var coordinatorDelegate: MockCoordinatorDelegate!
+        var coordinatorDelegate: CoordinatorDelegateMock!
 
-        context("given a ___VARIABLE_sceneName___ViewModel") {
+        describe("given a ___VARIABLE_sceneName___ViewModel") {
             beforeEach {
+                coordinatorDelegate = CoordinatorDelegateMock()
                 sut = ___VARIABLE_sceneName___ViewModel(coordinatorDelegate: coordinatorDelegate)
             }
         }
     }
 }
 
-private class MockCoordinatorDelegate: ___VARIABLE_sceneName___ViewModelCoordinatorDelegate {
+private class CoordinatorDelegateMock: ___VARIABLE_sceneName___ViewModelCoordinatorDelegate {
 
 }

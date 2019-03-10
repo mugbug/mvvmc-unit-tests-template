@@ -6,7 +6,7 @@
 import Quick
 import Nimble
 
-@testable import Dev
+@testable import MeuAlelo
 
 final class ___FILEBASENAMEASIDENTIFIER___: QuickSpec {
     override func spec() {
